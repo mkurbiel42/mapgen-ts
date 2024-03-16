@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mapgen by Jerzyx</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="context-menu-wrapper" class="hidden">
+			<div id="context-menu">
+				<div class="option" id="option-undo">
+					<p class="desc">Undo</p>
+					<p class="keystroke">Ctrl+Z</p>
+				</div>
+				<div class="option" id="option-redo">
+					<p class="desc">Redo</p>
+					<p class="keystroke">Ctrl+Y</p>
+				</div>
+				<div class="option" id="option-cut">
+					<p class="desc">Cut</p>
+					<p class="keystroke">Ctrl+X</p>
+				</div>
+				<div class="option" id="option-copy">
+					<p class="desc">Copy</p>
+					<p class="keystroke">Ctrl+C</p>
+				</div>
+				<div class="option" id="option-paste">
+					<p class="desc">Paste</p>
+					<p class="keystroke">Ctrl+V</p>
+				</div>
+				<div class="option" id="option-delete">
+					<p class="desc">Delete</p>
+					<p class="keystroke">Del</p>
+				</div>
+				<div class="option" id="option-save">
+					<p class="desc">Save to file</p>
+					<p class="keystroke">Ctrl+S</p>
+				</div>
+				<div class="option" id="option-load">
+					<p class="desc">Load from file</p>
+					<p class="keystroke">Ctrl+L</p>
+				</div>
+			</div>
+		</div>
+		<div id="automat-wrapper">
+			<label for="automat">Automat </label><input type="checkbox" id="automat" />
+		</div>
+		<main>
+			<div id="items"></div>
+
+			<div id="map">
+				<div id="select-guide"></div>
+				<div id="clipboard-preview"></div>
+			</div>
+		</main>
+
+		<script type="module" src="src/main.ts"></script>
+	</body>
+</html>
